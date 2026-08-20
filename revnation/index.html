@@ -11,9 +11,7 @@
 <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.25/dist/lenis.css">
 
 <style>
-/* ============================================================
-   REV NATION - UNCOMPROMISED FRONT-END (V10)
-   ============================================================ */
+
 :root {
   --void: #030303; 
   --surface: #0a0a0a; 
@@ -109,9 +107,7 @@ a:hover .arrow:not(.hidden), button:hover .arrow:not(.hidden) { transform: trans
 </defs>
 </svg>
 <style>
-/* ============================================================
-   PRELOADER (GARAGE DOOR SPLIT)
-   ============================================================ */
+
 #preloader { position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center; pointer-events: none; }
 .pl-curtain { position: absolute; left: 0; width: 100%; height: 50.5vh; background: var(--void); transition: transform 1.2s cubic-bezier(0.7, 0, 0.2, 1); z-index: 1; border-bottom: 1px solid var(--line); }
 .pl-curtain.pl-top { top: 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
@@ -128,9 +124,7 @@ a:hover .arrow:not(.hidden), button:hover .arrow:not(.hidden) { transform: trans
 #preloader.done .pl-bottom { transform: translateY(100%); }
 #preloader.done .pl-content { opacity: 0; transform: scale(0.95); }
 
-/* ============================================================
-   NAVBAR & WALKING LINE HOVER
-   ============================================================ */
+
 header { position: fixed; top: 2vw; left: 5vw; width: 90vw; max-width: 1500px; z-index: 100; padding: 16px 32px; border-radius: 100px; background: rgba(5, 5, 5, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: space-between; transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); overflow: hidden; }
 .header-logo { font-family: var(--display); font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; color: var(--ink); text-transform: uppercase; letter-spacing: 0.1em; }
 .header-logo .mark { width: 22px; height: 22px; flex-shrink: 0; }
@@ -168,17 +162,14 @@ body.menu-open { overflow: hidden; }
   .menu-trigger { display: flex !important; } 
 }
 
-/* ============================================================
-   HERO SECTION & TOTAL CINEMATIC TAKEOVER
-   ============================================================ */
+
 #hero { height: 100vh; min-height: 700px; position: relative; overflow: hidden; background: var(--void); }
 .hero-media { position: absolute; inset: 0; filter: contrast(1.1); } 
 .hero-media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.6; transition: opacity 1s; }
 
-/* The Scrim */
+
 .hero-scrim { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, rgba(3,3,3,0) 0%, rgba(3,3,3,0.5) 62%, rgba(3,3,3,0.95) 100%), linear-gradient(180deg, rgba(3,3,3,0.3) 0%, rgba(3,3,3,0) 30%, rgba(3,3,3,0.9) 85%, var(--void) 100%); transition: opacity 1.2s cubic-bezier(0.16,1,.3,1); pointer-events: none; }
 
-/* The Content */
 .hero-content { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 12vh; transition: transform 1.2s cubic-bezier(0.16,1,.3,1), opacity 1.2s cubic-bezier(0.16,1,.3,1); transform-origin: bottom left; }
 .hero h1 .line { display: block; overflow: hidden; padding-bottom: 8px; }
 .hero h1 .line span { display: inline-block; transform: translateY(105%); transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
@@ -190,18 +181,18 @@ body.menu-open { overflow: hidden; }
 .hero-actions { margin-top: 48px; display: flex; gap: 20px; flex-wrap: wrap; opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.16,1,.3,1) 0.55s; }
 .hero.revealed .hero-actions { opacity: 1; transform: translateY(0); }
 
-/* --- THE FULL CINEMATIC VANISH (ONLY TRIGGERS AT TOP OF PAGE) --- */
+
 body.ui-minimized header { opacity: 0; visibility: hidden; transform: translateY(-20px); pointer-events: none; }
 body.ui-minimized .hero-content { opacity: 0; visibility: hidden; transform: translateY(40px); pointer-events: none; }
 body.ui-minimized .hero-scrim { opacity: 0; } /* Text, Buttons, Scrim all gone. Just raw video. */
 </style>
 
-<!-- WHATSAPP FLOAT -->
+
 <a href="https://wa.me/917300049430" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
-<!-- PRELOADER -->
+
 <div id="preloader" role="status" aria-label="Loading Studio">
   <div class="pl-curtain pl-top"></div>
   <div class="pl-curtain pl-bottom"></div>
@@ -256,9 +247,7 @@ REV NATION
 </div>
 </section>
 <style>
-/* ============================================================
-   UNIVERSAL HORIZONTAL SCROLL ENGINE (PERFECTED PROPORTIONS)
-   ============================================================ */
+
 .h-scroll-section { overflow: hidden; background: var(--void); padding: 160px 0; position: relative; border-bottom: 1px solid var(--line); }
 .h-scroll-layout { display: flex; flex-direction: column; gap: 80px; }
 .h-scroll-header { max-width: 720px; padding: 0 5vw; margin: 0; }
@@ -445,10 +434,7 @@ REV NATION
 </div>
 </section>
 <style>
-/* ============================================================
-   BOTTOM HALF OVERHAUL (Compare, Reviews, Form, Footer)
-   ============================================================ */
-/* Compare Slider */
+
 #compare { background: var(--void); border-bottom: 1px solid var(--line); }
 .compare-frame { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); user-select: none; background: var(--void); touch-action: pan-y; }
 .compare-layer { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background-size: cover; background-position: center; pointer-events: none; filter: grayscale(100%); }
@@ -473,7 +459,7 @@ REV NATION
 .testi-card .author h5 { font-size: 18px; color: var(--ink); margin-bottom: 4px; font-family: var(--display); font-weight: 600;}
 .testi-card .author span { font-size: 12px; color: var(--ink-faint); font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.05em;}
 
-/* Ultra-Clean Booking Form */
+
 #booking { background: var(--surface); border-top: 1px solid var(--line); }
 .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; }
 .field { margin-bottom: 32px; position: relative; }
@@ -485,7 +471,7 @@ REV NATION
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 @media(max-width: 900px) { .booking-grid { grid-template-columns: 1fr; gap: 60px; } .field-row { grid-template-columns: 1fr; gap: 0; } }
 
-/* Massive Architectural Footer */
+
 footer { background: var(--void); border-top: 1px solid var(--line); padding: 120px 0 40px; }
 .foot-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 60px; padding-bottom: 80px; border-bottom: 1px solid var(--line); }
 .foot-word { font-family: var(--display); font-size: 11vw; font-weight: 800; letter-spacing: -0.04em; line-height: 0.85; color: var(--ink); margin-left: -5px; }
@@ -597,9 +583,6 @@ footer { background: var(--void); border-top: 1px solid var(--line); padding: 12
 </div>
 </footer>
 
-<!-- ============================================================
-     THE UNCOMPROMISED JAVASCRIPT ENGINE
-     ============================================================ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
@@ -624,7 +607,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   var isMobile = window.innerWidth <= 900;
   if(window.gsap && window.ScrollTrigger) { gsap.registerPlugin(ScrollTrigger); }
 
-  /* 1. DIGITAL SPLIT-SCREEN PRELOADER */
+  
   var pctEl = document.getElementById('plPct');
   var barEl = document.getElementById('plBar');
   var preloader = document.getElementById('preloader');
@@ -649,7 +632,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     else updatePreloader(fakeProgress);
   }, 120);
 
-  /* 2. TRUE CINEMATIC TAKEOVER (WITH SCROLL-LOCK CHECK) */
+  
   let idleDelay = isMobile ? 5000 : 3000;
   let idleTimer;
   function resetIdle() {
@@ -670,7 +653,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   window.addEventListener('touchstart', resetIdle, {passive: true});
   resetIdle(); 
 
-  /* 3. FINELY TUNED ANIMATION RICH VIEWPORT FADES */
+  
   if(window.gsap && window.ScrollTrigger && !reduceMotion) {
     gsap.utils.toArray('.cinema-drop').forEach(elem => {
       gsap.to(elem, {
@@ -680,7 +663,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
   }
 
-  /* 4. LENIS SMOOTH SCROLL ENGINE (Desktop Only) */
+  
   if(window.Lenis && !reduceMotion && !isMobile) {
     var lenis = new Lenis({ anchors: true, lerp: 0.08 });
     lenis.on('scroll', function() { if(window.ScrollTrigger) ScrollTrigger.update(); });
@@ -689,7 +672,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     gsap.ticker.lagSmoothing(0);
   }
 
-  /* 5. MAGNETIC BUTTON ELEMENTS (Desktop Only) */
+  
   if(!reduceMotion && !isMobile) {
     document.querySelectorAll('.magnetic').forEach(function(btn){
       btn.addEventListener('mousemove', function(e){
@@ -704,7 +687,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
   }
 
-  /* 6. MOBILE HAMBURGER -> ARROW MENU INTERACTION */
+  
   var menuTrigger = document.getElementById('menuTrigger'); 
   var drawer = document.getElementById('mobile-drawer');
   if(menuTrigger && drawer) {
@@ -722,7 +705,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
   }
 
-  /* 7. HIGH-END CENTER-PINNED HORIZONTAL SCROLL MATRIX */
+  
   function initHorizontalScroller(trackId, viewportId) {
     var track = document.getElementById(trackId);
     var viewport = document.getElementById(viewportId);
@@ -752,7 +735,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   initHorizontalScroller('processTrack', 'processViewport');
   initHorizontalScroller('buildsTrack', 'buildsViewport');
 
-  /* 8. BEFORE/AFTER SLIDER INTERACTION ENGINE */
+ 
   var compareFrame = document.getElementById('compareFrame');
   var clip = document.getElementById('media-before_img');
   var handle = document.getElementById('compareHandle');
@@ -778,7 +761,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     window.addEventListener('touchmove', e => { if(dragging) setSplit(posFromEvent(e)); }, {passive: true});
   }
 
-  /* 9. DATABASE PRELOAD & DYNAMIC PORTFOLIO LAYERING */
   async function preloadSiteData() {
     if(db) {
       try {
@@ -847,7 +829,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   
   if(db) preloadSiteData(); else { clearInterval(plInterval); updatePreloader(100); }
 
-  /* 10. REAL-TIME DATA COUNTER ODOMETERS */
+  
   function buildOdometer(el) {
     var target = el.getAttribute('data-count');
     if(!target) return [];
@@ -876,7 +858,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   }, {threshold: 0.3});
   if(authSec) clo.observe(authSec);
 
-  /* 11. PREMIUM TESTIMONIAL ENGINE COUPLING */
+  
   var testiGrid = document.getElementById('testiGrid');
   var testimonials = [
     {q: "The wrap and wheel swap turned heads. Cleanest install in Jaipur.", name: 'Aditya R.', sub: 'Thar Wrap'},
@@ -912,7 +894,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
   }
 
-  /* 12. CLEAN LEAD DISPATCH */
   var bookingForm = document.getElementById('bookingForm');
   if(bookingForm) {
     bookingForm.addEventListener('submit', function(e) {
